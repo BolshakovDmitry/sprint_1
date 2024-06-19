@@ -1,6 +1,9 @@
 @import '../../assets/variables';
 
-.input-field {
+.profile-field {
+  display: flex;
+  justify-content: space-between;
+
 
   &__title {
     font: $font-small;

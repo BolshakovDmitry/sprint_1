@@ -1,4 +1,12 @@
-$font-body: Inter,"Segoe UI","Roboto","Helvetica Neue",sans-sans;
+$font-body:"Segoe UI",;
+
+$border-pink: #ff00fb;
+$button-hover: #0813ad;
+
+$weight-main: 500;
+$size-main: 13px;
+$lineheight-main: 13px;
+
 
 $font-weight-regular: 500;
 $font-weight-semibold: 600;
@@ -12,9 +20,15 @@ $font-micro: #{$font-weight-regular} 11px/11px #{$font-body};
 $font-nano: #{$font-weight-regular} 9px/9px #{$font-body};
 
 $text-bgcolor: #FFF;
-$text-color: #000;
+$text-bgcolor: #fce3e3;
+$text-bgcolor-blue: #2c68ff;
+$text-black: #000;
 $text-light-color: #999;
 $text-red: #FF0000;
+
+$unread-background-color: #0d29ff;
+
+
 
 $link-color: #3369f3;
 $title-color: #1E1E1E;
@@ -30,6 +44,9 @@ $menu-bgcolor: #{$text-bgcolor};
 $menu-shadow: 0px 0px 6px #00000024;
 
 $divider-line-color: #EAEAEA;
+
+
+$chat-search-bgcolor: #d4caca;
 
 $chat-list-bgcolor: #FBFBFB;
 $chat-list-current-bgcolor: #E4EDFD;

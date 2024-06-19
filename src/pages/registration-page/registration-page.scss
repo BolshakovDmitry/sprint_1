@@ -1,12 +1,12 @@
 @import '../../assets/variables';
 
-.login-page {
+.registration-page {
     width: 280px;
     padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 70px;
+    gap: 50px;
     border: 3px solid $border-pink;
     border-radius: 12px;
     box-shadow: 0px 0px 30px 0px #00000024;
@@ -23,4 +23,3 @@
       gap: 15px;
     }
   }
-  

@@ -1,7 +1,7 @@
 @import '../../assets/variables';
 
 .button {
-  height: 40px;
+  height: 30px;
   width: 100%;
   text-align: center;
   border-radius: 8px;
@@ -10,3 +10,24 @@
   border: 0;
   cursor: pointer;
 }
+
+.small{
+  width: 40%;
+}
+.red{
+  background-color: red;
+}
+
+.grey-no-border{
+  border:none;
+  width:30%;
+  background-color: inherit;
+  color: black;
+  
+}
+.button:hover{
+  background-color: $button-hover;
+  }
+.grey-no-border:hover{
+    background-color:inherit;
+  }

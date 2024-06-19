@@ -1,9 +1,11 @@
 @import '../../assets/variables';
 
-.chat-list {
-  background: $chat-list-bgcolor;
-  height: 100%;
+.ContainerCentered {
+  height: 100vh;
+  max-width: 2000px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center; 
 }

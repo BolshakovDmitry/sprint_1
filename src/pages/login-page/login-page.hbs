@@ -1,12 +1,21 @@
-{{#> Dialog }}
+{{#> ContainerCentered }}
+
   <form class="login-page">
+
+    {{> PageTitle title="Вход" }}
+
     <div class="login-page__content">
-      {{> PageTitle title="Вход" }}
       {{> InputField className="login-page__input" title="Логин" name="login" }}
       {{> InputField className="login-page__input" title="Пароль" name="password" type="password" }}
     </div>
-    <div class="login-page__footer">
+
+    <div class="login-page__buttons">
       {{> Button text="Авторизоваться" page="chat" }}
+      {{> Button text="Нет аккаунта?" page="registration" }}
     </div>
+
   </form>
-{{/ Dialog }}
+
+  {{> Button text="К профилю" page="profile" }}
+
+{{/ ContainerCentered }}

@@ -1,0 +1,24 @@
+{{#> ContainerCentered }}
+
+  <form class="registration-page">
+
+    {{> PageTitle title="Регистрация" }}
+
+    <div class="registration-page__content">
+      {{> InputField className="registration-page__input" title="Почта" value="pochta@yandex.ru" }}
+      {{> InputField className="registration-page__input" title="Логин" value="ivanivanov" }}
+      {{> InputField className="registration-page__input" title="Имя" value="Иван" }}
+      {{> InputField className="registration-page__input" title="Фамилия" value="Иванов" }}
+      {{> InputField className="registration-page__input" title="телефон" value="+7 (909) 967 30 30" }}
+      {{> InputField className="registration-page__input" title="Пароль" name="password" type="password" value="••••••••••••" }}
+      {{> InputField className="registration-page__input" title="Пароль еще раз" name="password" type="password" value="••••••••••••" }}
+    </div>
+
+    <div class="registration-page__buttons">
+      {{> Button text="Зарегестрироваться" page="registration" }}
+      {{> Button text="Выйти" page="login" }}
+    </div>
+
+  </form>
+
+{{/ ContainerCentered }}

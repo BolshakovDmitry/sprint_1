@@ -5,6 +5,9 @@ import * as Pages from './pages';
 const pages = {
   'chat': [ Pages.ChatPage ],
   'login': [ Pages.LoginPage ],
+  'registration': [ Pages.RegistrationPage ],
+  'profile': [ Pages.ProfilePage],
+  'password': [ Pages.PasswordPage]
 };
 
 Object.entries(Components).forEach(([ name, component ]) => {

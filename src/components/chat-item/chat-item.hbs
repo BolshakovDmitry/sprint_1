@@ -1,13 +1,34 @@
 <div class="chat-item">
-  <div class="chat-item__line"></div>
+  
   <div class="chat-item__block{{#if current}} chat-item__block--current{{/if}}">
+
     {{#if avatar}}
     <div>
       <img class="chat-item__avatar" src={{ avatar }}><img>
     </div>
+    
     {{else }}
     <div class="chat-item__avatar"></div>
     {{/if}}
-    <div class="chat-item__message"><span class="chat-item__message-text">{{ message }}</span></div>
+
+    <div class="chat-item__centerpart">
+
+      <div class="chat-item__message-name">{{ name }}</div>
+      <div class="chat-item__message-text">{{ message }}</div>
+    
+    </div>
+
+    {{#if unread}}
+
+      <div class="chat-item__rightpart">
+
+        <div class="chat-item__message-time">{{ time }}</div>
+        <div class="chat-item__message-unread">{{ unread }}</div>
+      
+      </div>
+  
+     {{/if}}
+
   </div>
+
 </div>

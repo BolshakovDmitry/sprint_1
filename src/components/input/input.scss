@@ -1,17 +1,37 @@
+@import '../../assets/variables';
+
 .input {
     height: 26px;
   
     &__element {
+      width: 120px;
       border: none;
       padding: 0;
-      width: 100%;
-      height: 100%;
       box-sizing: border-box;
-      font: inherit;
-  
+      outline: none;
+      font: $font-regular;
+
       &--align-right {
         text-align: right;
       }
     }
   }
+  .no-bottom-line{
+    input::-webkit-input-placeholder {
+      text-align: right;
+    }
+    
+    input:-moz-placeholder {
+      text-align: right;
+    }
+    
+    input::-moz-placeholder {
+      text-align: right;
+    }
+    
+    input:-ms-input-placeholder {
+      text-align: right;
+    }
+  }
+  
   
