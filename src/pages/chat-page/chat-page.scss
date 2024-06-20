@@ -55,12 +55,12 @@
     border: none; 
     outline: none;
     margin-left: -40px;
-    background-color: #ffffff;
+    background-color: $white;
     background-color: $chat-search-bgcolor;
 }
 }
 .dots-buttons{
-  background-color: #ffffff;
+  background-color: $white;
   border:none;
 }
 .search-bottom{
@@ -83,11 +83,11 @@
     margin-left:auto;
     border: none; 
     outline: none;
-    background-color: #ffffff; 
+    background-color: $white; 
   }
 }
 .clip{
-  background-color: #ffffff;
+  background-color: $white;
   border: none; 
   outline: none;
 }

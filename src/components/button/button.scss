@@ -14,14 +14,14 @@
   width: 40%;
 }
 .red{
-  background-color: red;
+  background-color: $red-PRIMARY;
 }
 .grey-no-border{
   font:$font-regular;
   border:none;
   width:30%;
   background-color: inherit;
-  color: black;
+  color: $black-PRIMARY;
   margin-left:auto;
   margin-top: 20px;
 }

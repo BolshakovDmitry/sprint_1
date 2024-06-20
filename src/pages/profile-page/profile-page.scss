@@ -7,12 +7,12 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 50px;
-    border: 3px solid $border-pink;
+    border: 3px solid $border-main;
     border-radius: 12px;
-    box-shadow: 0px 0px 30px 0px #00000024;
+    box-shadow: 0px 0px 30px 0px $profile-box-shadow;
 
     &__linebreak{
-      border: 1px solid #3369F3;
+      border: 1px solid $border-main;
     }
 
     &__content {
@@ -35,13 +35,13 @@
     flex-direction: column;
     justify-content: center;
     align-self: center;
-  }
-  .profile-header__name{
+
+   &__name{
     align-self: center;
     font:$font-big;
     margin-bottom: 20px;
-  }
-  .profile-header__avatar{
+    }
+  &__avatar{
     width: 70px;
   }
-  
+}

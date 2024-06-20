@@ -27,7 +27,7 @@
             font: $font-regular;
         }
         &__message-text{
-            color: $text-light-color;
+            color: $grey-color-PRIMARY;
             font: $font-micro;
         }
     }
@@ -39,11 +39,17 @@
         gap:15px;
 
         &__message-time{
-            color: $text-light-color;
+            color: $grey-color-PRIMARY;
             font: $font-micro;
         }
         &__message-unread{
-            color: $text-light-color;
+            padding: 4px;
+            text-align: center;
+            width: 15px;
+            width: 15px;
+            border-radius: 50%;
+            color: $white;
+            background-color: $blue-PRIMARY;
             font: $font-micro;
         }
     }

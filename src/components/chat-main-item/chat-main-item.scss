@@ -6,8 +6,8 @@
     text-align: left;
     width: 40%;
     font:$font-regular;
-    color:$text-black;
-    background-color: $text-bgcolor;
+    color:$black-PRIMARY;
+    background-color: $light-cream-PRIMARY;
     border-radius: 50px;
     padding: 10px;
     }
@@ -16,8 +16,8 @@
     text-align: right;
     width: 40%;
     font:$font-regular;
-    color: white;;
-    background-color: $text-bgcolor-blue;
+    color: $white;
+    background-color: $light-blue-PRIMARY;
     border-radius: 50px;
     padding: 10px; 
     }
