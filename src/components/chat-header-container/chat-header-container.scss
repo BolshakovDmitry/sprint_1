@@ -7,12 +7,11 @@
     align-items: center;
     margin-top: 20px;
     position: relative;
-}
 
-.linebreak-header{
-    width: 100%;
-    border: 1px solid $divider-line-color;
-    position: absolute;
-    transform: translateY(2800%) ;
+    &__linebreak{
+        width: 100%;
+        border: 1px solid $divider-line-color;
+        position: absolute;
+        transform: translateY(2800%) ;
+    }
 }
-

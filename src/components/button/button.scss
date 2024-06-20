@@ -10,20 +10,20 @@
   border: 0;
   cursor: pointer;
 }
-
 .small{
   width: 40%;
 }
 .red{
   background-color: red;
 }
-
 .grey-no-border{
+  font:$font-regular;
   border:none;
   width:30%;
   background-color: inherit;
   color: black;
-  
+  margin-left:auto;
+  margin-top: 20px;
 }
 .button:hover{
   background-color: $button-hover;

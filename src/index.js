@@ -7,7 +7,9 @@ const pages = {
   'login': [ Pages.LoginPage ],
   'registration': [ Pages.RegistrationPage ],
   'profile': [ Pages.ProfilePage],
-  'password': [ Pages.PasswordPage]
+  'password': [ Pages.PasswordPage],
+  'error404': [ Pages.Error404Page],
+  'error500': [ Pages.Error500Page]
 };
 
 Object.entries(Components).forEach(([ name, component ]) => {

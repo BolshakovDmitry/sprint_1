@@ -1,7 +1,8 @@
 @import '../../assets/variables';
 
+.chat-main{
 
-.chat-main__message-text{
+&__message-text{
     text-align: left;
     width: 40%;
     font:$font-regular;
@@ -9,11 +10,8 @@
     background-color: $text-bgcolor;
     border-radius: 50px;
     padding: 10px;
-}
-
-
-.chat-main__reply-text{
-
+    }
+&__reply-text{
     margin-left: auto;
     text-align: right;
     width: 40%;
@@ -21,6 +19,6 @@
     color: white;;
     background-color: $text-bgcolor-blue;
     border-radius: 50px;
-    padding: 10px;
-    
+    padding: 10px; 
+    }
 }

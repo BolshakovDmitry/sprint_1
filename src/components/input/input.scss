@@ -10,13 +10,11 @@
       box-sizing: border-box;
       outline: none;
       font: $font-regular;
-
-      &--align-right {
-        text-align: right;
-      }
     }
   }
   .no-bottom-line{
+    align-self: flex-end;
+
     input::-webkit-input-placeholder {
       text-align: right;
     }
@@ -33,5 +31,7 @@
       text-align: right;
     }
   }
-  
+  .standart{
+    font:$font-small;
+  }
   

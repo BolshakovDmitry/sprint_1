@@ -16,7 +16,6 @@
     padding: 0 15px;
     border-right: 1px solid $divider-line-color;
   } 
-
   &__right{
     flex-grow: 1;
     flex-shrink: 1;
@@ -27,23 +26,19 @@
     margin-right: 30px;
     justify-content: space-between;
   }
+  &__bottom{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 20px;
 
-  &__list {
-    border-right: 1px solid $divider-line-color;
+     &__bottom-flex{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        }
   }
-}
-
-.dots-button{
-  background-color: #ffffff;
-  border:none;
-}
-.chat-page-profile{
-  margin-top: 20px;
-  margin-left: auto;
-  font: $font-small;
-  border: none;
-  background-color: inherit;
-  cursor: pointer;
 }
 .search{
   &__input {
@@ -64,28 +59,10 @@
     background-color: $chat-search-bgcolor;
 }
 }
-.chat-page-container__bottom{
-  
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  gap: 20px;
+.dots-buttons{
+  background-color: #ffffff;
+  border:none;
 }
-
-
-.bottom{
-  width: 100%;
-  display: flex;
-  
-  align-items: center;
-  margin-bottom: 20px;
-}
-.linebreak{
-  width: 100%;
-  border: 1px solid $divider-line-color;
-}
-
-
 .search-bottom{
   flex-basis: 100%;
   display: flex;
@@ -106,12 +83,16 @@
     margin-left:auto;
     border: none; 
     outline: none;
-    background-color: #ffffff;
-    
-}
+    background-color: #ffffff; 
+  }
 }
 .clip{
   background-color: #ffffff;
   border: none; 
   outline: none;
 }
+.linebreak{
+  width: 100%;
+  border: 1px solid $divider-line-color;
+}
+
