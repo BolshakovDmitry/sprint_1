@@ -1,6 +1,6 @@
 @import '../../assets/variables';
 
-.profile-page {
+.profile__page {
     width: 600px;
     padding: 15px;
     display: flex;
@@ -28,20 +28,19 @@
       align-items: center;
       gap: 15px;
     }
-  
-  }
-  .profile-header{
+    &__header{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-self: center;
 
-   &__name{
+    &__name{
     align-self: center;
     font:$font-big;
     margin-bottom: 20px;
     }
-  &__avatar{
-    width: 70px;
+    &__avatar{
+    width: 50px;
   }
+}
 }

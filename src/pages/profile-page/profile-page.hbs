@@ -1,44 +1,50 @@
 {{#> ContainerCentered }}
 
-  <form class="profile-page">
+  <form class="profile__page">
+
+    <header class="profile__page__header">
 
       {{#each (chat-page-list)}}
 
-       {{#if current}}
-          <div class="profile-header">
-       {{> PageTitle title="Profile" }}
-             <div class="profile-header__name">{{ name }}</div>
-             <img class="profile-header__avatar" src={{ avatar }}><img>
-          </div>
-        {{/if}}
+      {{#if current}}
+          
+      {{> PageTitle title="Profile" }}
+
+             <div class="profile__page__header__name">{{ name }}</div>
+             <img class="profile__page__header__avatar" src={{ avatar }}><img>
+      {{/if}}
         
       {{/each}}
 
-    <div class="profile-page__content">
+    </header>
 
-      {{> ProfileField title="Почта" text="standart" placeholder="pochta@yandex.ru" }}
+    <main class="profile__page__content">
+
+      {{> ProfileField title="Почта" text="standart" name="email" placeholder="pochta@yandex.ru" }}
       {{> Linebreak }}
 
-      {{> ProfileField title="Логин" text="standart" placeholder="ivanivanov" }}
+      {{> ProfileField title="Логин" text="standart" name="login" placeholder="ivanivanov" }}
       {{> Linebreak }}
 
-      {{> ProfileField title="Имя" text="standart" placeholder="Иван" }}
+      {{> ProfileField title="Имя" text="standart" name="first_name" placeholder="Иван" }}
       {{> Linebreak }}
 
-      {{> ProfileField title="Фамилия" text="standart" placeholder="Иванов" }}
+      {{> ProfileField title="Фамилия" text="standart" name="second_name" placeholder="Иванов" }}
       {{> Linebreak }}
       
-      {{> ProfileField title="Имя в чате" text="standart" placeholder="Иван" }}
+      {{> ProfileField title="Имя в чате" text="standart" name="display_name" placeholder="Иван" }}
       {{> Linebreak }}
 
-      {{> ProfileField title="телефон" text="standart" placeholder="+7 (909) 967 30 30" }}
-    </div>
+      {{> ProfileField title="телефон" text="standart" name="phone" placeholder="+7 (909) 967 30 30" }}
+  
+    </main>
 
-    <div class="profile-page__buttons">
+    <footer class="profile__page__buttons">
+      {{> Button text="Поменять аватар" page="registration" name="avatar" className="small" }}
       {{> Button text="Изменить данные" page="registration" className="small" }}
       {{> Button text="Изменить пароль?" page="password" className="small" }}
       {{> Button text="Выйти?" page="login" className="small" red ="red" }}
-    </div>
+    </footer>
 
   </form>
 

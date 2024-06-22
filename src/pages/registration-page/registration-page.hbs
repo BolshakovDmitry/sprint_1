@@ -2,22 +2,24 @@
 
   <form class="registration-page">
 
+    <header>
       {{> PageTitle title="Регистрация" }}
+    </header>
 
-    <div class="registration-page__content">
-      {{> InputField className="registration-page__input" title="Почта" value="pochta@yandex.ru" }}
-      {{> InputField className="registration-page__input" title="Логин" value="ivanivanov" }}
-      {{> InputField className="registration-page__input" title="Имя" value="Иван" }}
-      {{> InputField className="registration-page__input" title="Фамилия" value="Иванов" }}
-      {{> InputField className="registration-page__input" title="телефон" value="+7 (909) 967 30 30" }}
+    <main class="registration-page__content">
+      {{> InputField className="registration-page__input" title="Почта" name="email" value="pochta@yandex.ru" }}
+      {{> InputField className="registration-page__input" title="Логин" name="login" value="ivanivanov" }}
+      {{> InputField className="registration-page__input" title="Имя" name="first_name" value="Иван" }}
+      {{> InputField className="registration-page__input" title="Фамилия" name="second_name" value="Иванов" }}
+      {{> InputField className="registration-page__input" title="телефон" name="phone" value="+7 (909) 967 30 30" }}
       {{> InputField className="registration-page__input" title="Пароль" name="password" type="password" value="••••••••••••" }}
       {{> InputField className="registration-page__input" title="Пароль еще раз" name="password" type="password" value="••••••••••••" }}
-    </div>
+    </main>
 
-    <div class="registration-page__buttons">
+    <footer class="registration-page__buttons">
       {{> Button text="Зарегестрироваться" page="registration" }}
       {{> Button text="Выйти" page="login" }}
-    </div>
+    </footer>
 
   </form>
 

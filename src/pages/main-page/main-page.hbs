@@ -1,9 +1,10 @@
 {{#> ContainerCentered }}
 
-  <div class="main-page">
-
+  <header class="header">
       {{> PageTitle title="Список Страниц:" }}
-
+  </header>
+    
+  <main class="main-page">
     <div class="login-page__buttons">
       {{> Button text="Чаты" page="chat" }}
       {{> Button text="ошибка404" page="error404" }}
@@ -12,8 +13,7 @@
       {{> Button text="Пароль" page="password" }}
       {{> Button text="Профиль" page="profile" }}
       {{> Button text="Регистрация" page="registration" }}
-    </div>
-
-  </form>
+    </main>
+  </main>
 
 {{/ ContainerCentered }}

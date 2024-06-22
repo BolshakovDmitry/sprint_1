@@ -1,6 +1,6 @@
 <div class="chat-page-container">
 
-  <div class="chat-page-container__left">
+  <aside class="chat-page-container__left">
 
     {{> Button className="grey-no-border" text="Профиль" page="profile" }}
 
@@ -14,7 +14,7 @@
     {{#> ChatList }}
 
       {{#each (chat-page-list)}}
-        {{> ChatItem }}
+        {{> ChatItem message = "message"}}
         {{> Linebreak }}
       {{/each}}
 
@@ -22,9 +22,9 @@
 
     {{/ ChatList }}
 
-  </div>
+  </aside>
   
-  <div class="chat-page-container__right">
+  <main class="chat-page-container__right">
     
     {{#> ChatHeaderContainer }}
     
@@ -60,11 +60,11 @@
        
     {{/ ChatMainList }}
   
-  <div class="chat-page-container__bottom">
+    <footer class="chat-page-container__bottom">
 
     {{> Linebreak }}
 
-    <div class="chat-page-container__bottom__bottom-flex">
+      <div class="chat-page-container__bottom__bottom-flex">
 
         <button class="clip">
             <i class="fa-solid fa-paperclip fa-2xl" style="color: #0033ff;"></i>
@@ -77,11 +77,11 @@
           </button>
         </form> 
 
-    </div>
+      </div>
 
-  </div>
+  </footer>
     
-</div>
+</main>
 
 
 
