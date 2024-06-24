@@ -4,16 +4,30 @@
       {{> PageTitle title="Список Страниц:" }}
   </header>
     
-  <main class="main-page">
-    <div class="login-page__buttons">
-      {{> Button text="Чаты" page="chat" }}
-      {{> Button text="ошибка404" page="error404" }}
-      {{> Button text="ошибка500" page="error500" }}
-      {{> Button text="Логин" page="login" }}
-      {{> Button text="Пароль" page="password" }}
-      {{> Button text="Профиль" page="profile" }}
-      {{> Button text="Регистрация" page="registration" }}
-    </main>
-  </main>
+  <nav class="main-page">
+    <ul class="main-page__buttons">
+      <li>
+          {{> Button text="Чаты" page="chat" }}
+      </li>
+       <li>
+          {{> Button text="ошибка404" page="error404" }}
+       </li>
+       <li>
+          {{> Button text="ошибка500" page="error500" }}
+      </li>
+       <li>
+          {{> Button text="Логин" page="login" }}
+       </li>
+       <li>
+          {{> Button text="Пароль" page="password" }}
+       </li>
+       <li>
+          {{> Button text="Профиль" page="profile" }}
+       </li>
+       <li>
+          {{> Button text="Регистрация" page="registration" }}
+        </li>
+    </ul>
+  </nav>
 
 {{/ ContainerCentered }}
