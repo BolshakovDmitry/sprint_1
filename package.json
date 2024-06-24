@@ -16,11 +16,14 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vite --port 3000 --host"
+    "dev": "nodemon --watch src --exec 'node server.js'",
+    "build": "vite build"
   },
   "devDependencies": {
     "handlebars": "^4.7.8",
     "sass": "^1.71.1",
-    "vite": "^5.1.4"
+    "vite": "^5.1.4",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12"
   }
 }
