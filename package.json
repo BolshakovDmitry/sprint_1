@@ -17,7 +17,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "vite build",
-    "server": " npm run build && nodemon server.js"
+    "start": " npm run build && nodemon server.js"
   },
   "devDependencies": {
     "handlebars": "^4.7.8",
