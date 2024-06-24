@@ -15,12 +15,7 @@ const createServer = async () => {
 
   app.get('*', async (req, res) => {
     try {
-      const url = req.originalUrl;
-      const html = await vite.transformIndexHtml(
-        url,
-        await vite.ssrLoadModule('index.html')
-      );
-      res.status(200).set({ 'Content-Type': 'text/html' }).end(html);
+      res.sendFile(path.join(__dirname, 'dist/index.html'));
     } catch (e) {
       vite.ssrFixStacktrace(e);
       console.error(e);
